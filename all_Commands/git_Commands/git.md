@@ -55,7 +55,11 @@ Before starting any git command start with
 ## 14.git push origin <branch name> -f
  `git push origin <branch name> -f` send all the changes made locally without changing the previous amended commit message 
 
-## 15. how to resolve a conflict in code
+ ## 15. git branch -m <new branch name>
+ `git branch -m <new branch name>` renaming a branch
+
+
+## 16. how to resolve a conflict in code
 you merge the branches and using `git pull`then make are the necessary changes in your code then use `git add .` to add the changes in your branches then `git commit` which opens a page where when u press `i` it will let u write all the commit you want then to save those commit you first press `ESC` then press `:wq!` after you can save it remotely by pressing `git push origin <branch name>`
 
 For more necessary commands visit 
