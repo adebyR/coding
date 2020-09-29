@@ -137,3 +137,32 @@ input[type="button"]:hover{
 .caption {
     text-align: center;
 }
+#header{
+    background-color: #0000ff;
+    padding: 20px;
+    font-weight: bolder;
+    
+}
+
+#btnhome {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#btnlogin1, #btnregister1{
+    color: white;
+    text-decoration: none;
+}
+
+#btnlogin1{
+    margin-left: 80%;
+}
+
+.heading1{
+    text-align: center;
+}
+.heading2{
+    text-align: center;
+    color: red;
+}
