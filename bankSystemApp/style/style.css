@@ -25,6 +25,7 @@ body {
     height: 4px; 
     background-color: chocolate;
     border: none;
+    margin-top: 20px;
 }
 
 input[type="text"], input[type="password"]{
@@ -68,4 +69,71 @@ input[type="button"]:hover{
     margin-top: 80px;
     margin-left: 32%;
 
+}
+
+#btnlogin, #btnregister{
+    font-weight: bold;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+}
+
+#btnlogin{
+    margin-left: 70%;
+    color: blue;
+    background-color: #ffffff;
+    border:2px solid #e3e3e3;
+}
+
+#btnregister{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#btnlogin:hover, #btnregister:hover{
+    background-color: #7bb8ca;
+    cursor: pointer;
+    transition: 1s;
+}
+.homepage{
+    text-align: center;
+}
+
+.row {
+    width: 98%;
+    padding: 10px;
+    display: flex;
+}
+
+.column-one, .column-two {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.column-one {
+    margin-right: 14%;
+}
+
+.div-img-panel1, .div-img-panel2 {
+    background-color:#ded5d5;
+    padding: 20px; 
+    border-radius: 20px;
+    border: 2px solid grey;
+}
+
+.img-panel1, .img-panel2 {
+    width: 100%;
+    height: 400px;
+    opacity: .8;
+}
+
+.img-column:hover{
+    opacity: 1;
+    transition: .8s;
+}
+
+.caption {
+    text-align: center;
 }
