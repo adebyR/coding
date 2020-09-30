@@ -106,32 +106,36 @@ input[type="button"]:hover{
     display: flex;
 }
 
-.column-one, .column-two {
+.col-one, .col-two {
     width: 40%;
     padding: 10px;
     margin-bottom: 40px;
     display: inline-block;
 }
-.column-one {
+.col-one {
     margin-right: 14%;
 }
 
-.div-img-panel1, .div-img-panel2 {
+.div-img-panelA, .div-img-panelB {
     background-color:#ded5d5;
     padding: 20px; 
     border-radius: 20px;
     border: 2px solid grey;
 }
 
-.img-panel1, .img-panel2 {
+.img-panelA, .img-panelB {
     width: 100%;
     height: 400px;
-    opacity: .8;
+    opacity: .7;
 }
 
-.img-column:hover{
+.img-panelA:hover, .img-panelB:hover{
     opacity: 1;
-    transition: .8s;
+    transition: .8s ease-in-out;
+    cursor: pointer;
+    /* transform: rotate(360deg); */
+    /* transform: scale(2); */
+    
 }
 
 .caption {
@@ -156,13 +160,252 @@ input[type="button"]:hover{
 }
 
 #btnlogin1{
-    margin-left: 80%;
-}
+    margin-left: 75%;
+    /* border-right:2px solid white; */
+    margin-right: 5px; 
+    /* padding: 8px; */
 
-.heading1{
+}
+.verticle-line {
+    font-size: 22.788767px;
+    color: white;
+
+}
+.heading1, .heading2{
     text-align: center;
 }
 .heading2{
-    text-align: center;
     color: red;
 }
+
+.rowhome {
+    width: 98%;
+    padding: 10px;
+    display:inline-block;
+    margin-bottom: 50px;
+}
+
+.column-one, .column-two,.column-three {
+    width:23%;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 7%;
+
+}
+.column-one, .column-two{
+    margin-top: 20px;
+}
+
+.div-img-panel1, .div-img-panel2,.div-img-panel3 {
+    background-color:#ded5d5;
+    padding: 20px; 
+    border: 2px solid grey;
+}
+.div-img-panel1,.div-img-panel2{
+    border-radius: 20px;
+    height: 300px;
+    
+}
+.div-img-panel3{
+    height: 400px;
+}
+
+.img-panel1, .img-panel2,.img-panel3 {
+    width: 100%;
+    opacity: .8;
+}
+.img-panel1, .img-panel2{
+    height: 250px;
+
+}
+.img-panel3{
+    height: 300px;
+}
+
+.img-column:hover{
+    opacity: 1;
+    transition: .8s;
+}
+
+.caption1 {
+    text-align: center;
+}
+.row2 {
+    width: 98%;
+    padding: 10px;
+    display: inline-block;
+    
+}
+
+.column-four,.column-five {
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 100px;
+    
+}
+.column-four {
+    margin-right: 5%;
+    width:35%;
+}
+.column-five{
+    width: 45%;
+    height:200px;
+    margin-right: 7%;
+    
+}
+
+.div-img-panel4, .div-img-panel5 {
+    background-color:#ded5d5;
+    padding: 20px; 
+    border: 2px solid grey;
+}
+
+.div-img-panel5{
+    border-radius: 20px;
+}
+
+.img-panel4, .img-panel5 {
+    width: 100%;
+    height: 400px;
+    opacity: .8;
+}
+
+.img-column:hover{
+    opacity: 1;
+    transition: .8s;
+}
+
+.caption {
+    text-align: center;
+}
+.footer{
+    background-color: #5387c4;
+    padding: 15px;
+    font-weight: bolder;
+    color:white;
+    text-align: center;
+}
+
+/* medium screen or large devices */
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+
+}
+
+/* small screen or large devices */
+@media only screen and (min-width: 450px) and (max-width: 767px){
+    #btnlogin, #btnregister{
+        padding: 10px;
+    }
+    
+    #btnlogin{
+        margin-left: 60%;
+    }
+
+    #horizontal_line1 {
+        display: none;
+    }
+
+    .row {
+        width: 98.3455%;
+    }
+    
+    .col-one, .col-two {
+        width: 45%;
+    }
+    
+    .col-one {
+        margin-right: 1%;
+    }
+    
+    .div-img-panelA, .div-img-panelB {
+        background-color:white;
+        border: none;
+    }
+    
+    .img-panelA, .img-panelB {
+        height: 300px;
+        opacity: 1;
+    }
+    
+    .caption {
+        text-align: center;
+        background-color: thistle;
+        padding: 10px;
+        margin-top: -22px;
+    }
+}
+
+/* tiny screen or large devices */
+@media only screen and (max-width: 449px){
+    #btnlogin, #btnregister{
+        padding: 10px;
+    }
+    
+    #btnlogin{
+        margin-left: 40%;
+    }
+
+    #horizontal_line1 {
+        display: none;
+    }
+    .homepage {
+        color: tomato;
+    }
+
+    .row {
+        width: 98%;
+        display: block;
+    }
+    
+    .col-one, .col-two {
+        width: 95%;
+        padding: 5px;
+        display: block;
+    }
+    .col-one {
+        margin-right: 0.11%;
+    }
+    
+    .div-img-panelA, .div-img-panelB {
+        background-color:white;
+        border: none;
+    }
+    
+    .img-panelA, .img-panelB {
+        height: 200px;
+        opacity: 1;
+    }
+    
+    .caption {
+        text-align: center;
+        background-color: thistle;
+        padding: 10px;
+        margin-top: -25px;
+    }
+
+    .heading {
+        font-size: 20px !important;
+        top: 0;
+        /* position: fixed; */
+    }
+    
+    .login-Panel,.register-panel{
+        padding: 40px; 
+        border: 1px solid black;
+        width: 70%;
+        height: auto;
+        margin: 2%;
+    }
+    input[type="text"], input[type="password"]{
+        padding: 10px;  
+    }
+    input[type="button"]{
+        padding:10px ;
+        width: 98%;
+        margin-left: 3%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+}
+
