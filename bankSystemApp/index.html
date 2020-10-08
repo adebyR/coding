@@ -1,33 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <meta name="theme-color" content="#000000"/>
+        <meta name="description" content="Learning" />
+        <link rel="icon" href="assets/images/panel1.JPG" />
+        
         <title> Homepage| Bank System App </title>
-        <link rel="stylesheet" type="text/css" href="style/style.css"> 
-        <h1 class="heading">Learning HTML5, CSS4 and Vanilla JavaScript.</h1>
-        <hr id="horizontal_line1">
-        <br>
-        <h1 style="font-size: 50px;"> Homepage</h1>
+        <link rel="stylesheet" type="text/css" href="style/style.css"/>    
     </head>
 
     <body>
-       
-        <h2>Login page</h2>
-        <br>
-        <div class="login">
-            <form id="login" method="get" action="login.php">
-                <p> user name</p>    
-          <input type ="text" name="Uname" id="uname" placeholder="username">
-          <br>
-          <p>Pasword</p>
-          <input type="password" name="password" id="pass" placeholder="Password">
-            <br>
-            <br>
-            <input type="button" name="log" id="log" value="log in here">
-<br>
-<span>forget your password</span>
-
-          
-            </form>
+        <div id="header"> 
+            <a id="btnlogin" href="login.html" >Login</a>
+            <a  id="btnregister" href="register.html">Register </a>
         </div>
+        <hr id="horizontal_line1">
+        <h1 class="homepage"> Homepage</h1>
+
+        <div class="row">
+
+            <div class="col-one">
+                <div class="div-img-panelA">
+                    <img src="assets/images/panel1.JPG"  alt="Bank account1"  class="img-panelA"/>
+                </div>
+                <p class="caption">Bank account1</p>
+            </div>
+
+            <div class="col-two">
+                <div class="div-img-panelB">
+                    <img src="assets/images/panel2.JPG"  alt="Bank account2"  class="img-panelB"/>
+                </div>
+                <p class="caption">Bank account2</p>
+            </div>
+
+        </div>
+
+        <!-- copy of the first row only changing the images -->
+        <div class="row">
+
+            <div class="col-one">
+                <div class="div-img-panelA">
+                    <img src="assets/images/panel3.JPG"  alt="Bank account3"  class="img-panelA"/>
+                </div>
+                <p class="caption">Bank account3</p>
+            </div>
+
+            <div class="col-two">
+                <div class="div-img-panelB">
+                    <img src="assets/images/panel4.JPG"  alt="Bank account4"  class="img-panelB"/>
+                </div>
+                <p class="caption">Bank account4</p>
+            </div>
+
+        </div>
+
+
+
+         <!-- <div class="Panel3">
+            <img src="assets/images/panel3.JPG" alt="Bank account3"/>
+            <p>Bank account3</p>
+         </div>
+         <div class="Panel">
+            <img src="assets/images/panel4.JPG" alt="Bank account4"/>
+            <p>Bank account4</p>
+         </div> -->
     </body>
 </html>
