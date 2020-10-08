@@ -6,17 +6,37 @@
         <meta name="theme-color" content="#000000"/>
         <meta name="description" content="Learning" />
         <link rel="icon" href="assets/images/panel1.JPG" />
-        
         <title> Homepage| Bank System App </title>
-        <link rel="stylesheet" type="text/css" href="style/style.css"/>    
+        <link rel="stylesheet" type="text/css" href="style/style.css">  
     </head>
-
     <body>
-        <div id="header"> 
-            <a id="btnlogin" href="login.html" >Login</a>
-            <a  id="btnregister" href="register.html">Register </a>
+        <div id="header">
+            <a id="btnhome" href="index.html">Home</a>
+            <!-- <a id="btnlogin1" href="login.html" >Login</a> -->
+            <!-- <span class="verticle-line"> | </span> -->
+            <!-- <a  id="btnregister1" href="register.html">Register </a>  -->
+            <img 
+                src="assets/images/menu.png" 
+                class="menu-bar" 
+                onclick="showAuth()" 
+                style="cursor: pointer;"
+                id="show-menu"
+            />
+            <img 
+                src="assets/images/close.png" 
+                class="menu-bar" 
+                onclick="showAuth()" 
+                style="cursor: pointer;"
+                id="close-menu"
+            />
+
         </div>
-        <hr id="horizontal_line1">
+        <a id="btnhome" href="index.html">Home</a>
+            <p class="auth-paragraph"> <a class="auth-login" href="login.html" >Login</a> </p>
+            <hr />
+            <p class="auth-paragraph"> <a class="auth-register" href="register.html">Register</a> </p>
+            <!-- <h2 style="color: red; cursor: pointer;" onclick="hideAuth()">Close</h2> -->
+        </div>
         <h1 class="homepage"> Homepage</h1>
 
         <div class="row">
