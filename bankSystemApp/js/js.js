@@ -14,7 +14,7 @@ function showColumn(){
     }else {
         caption1.style.display ="block";
         caption2.style.display ="none";
-        hidding = true;(())
+        hidding = true;
     }
 }
 
@@ -28,11 +28,11 @@ function showAuth(){
     showMenu.style.display = "none";
     authLinks.style.transition= '2s';
     caption1.style.display ="none";
-    const a = 10;
-    var b = 90;
-    var b = 100;
-    alert(a+b)
-    console.log("A + B =====>", a+b)
+    // const a = 10;
+    // var b = 90;
+    // var b = 100;
+    // alert(a+b)
+    // console.log("A + B =====>", a+b)
     hidding = false;
     }
     else {
@@ -50,3 +50,4 @@ function showAuth(){
 //     authLinks.style.display="none";
 //     authLinks.style.transition= '2s';
 // }
+

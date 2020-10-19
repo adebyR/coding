@@ -11,46 +11,53 @@
     </head>
     <body>
         <div id="header">
-            <a id="btnhome" href="index.html">Home</a>
-            <!-- <a id="btnlogin1" href="login.html" >Login</a> -->
-            <!-- <span class="verticle-line"> | </span> -->
-            <!-- <a  id="btnregister1" href="register.html">Register </a>  -->
-            <!-- <img 
+             <a id="btnhome" href="index.html">Home</a>
+            <!-- <a id="btnlogin1" href="login.html" >Login</a> 
+            <span class="verticle-line"> | </span> 
+            <a  id="btnregister1" href="register.html">Register </a> onclick="showAuth()" -->
+             <img 
                 src="assets/images/menu.png" 
                 class="menu-bar" 
-                onclick="showAuth()" 
                 style="cursor: pointer;"
-                id="show-menu"
-            /> -->
+                id="show-menu"/>
+            
             <img 
                 src="assets/images/close.png" 
-                class="menu-bar" 
-                onclick="showAuth()" 
+                class="menu-bar"  
                 style="cursor: pointer;"
                 id="close-menu"
             />
-
-        </div>
-        <div class="auth-div" id="auth-panel">
-            <p class="auth-paragraph"> <a class="auth-login" href="login.html" >Login</a> </p>
-            <hr />
-            <p class="auth-paragraph"> <a class="auth-register" href="register.html">Register</a> </p>
-            <!-- <h2 style="color: red; cursor: pointer;" onclick="hideAuth()">Close</h2> -->
-            <h1 class="heading3" style="font-size: 30px;"> SIMPLE CALCULATOR </h1>
-        </div>
-        <div class="CALCULATOR">
-            <div class="calc">
-                <form id="login" method="get" action="login.php">
-                    <p> Email:</p>    
-                    <input type ="number" name="Uname" id="uname" placeholder="Type your email...">
-                    <br>
-                    <p>Pasword</p>
-                    <input type="number" name="password" id="pass" placeholder="Type your password...">
-                    <br><br>
-                    <input type="button" name="log" id="log" value="Login">
-            
-                    <p>New user? <a href="register.html" target="_self" class="register-btn"> Create an account</a></p>
-                </form>
+            <div class="auth-div" id="auth-panel">
+                <p class="auth-paragraph"> <a class="auth-login" href="login.html" >Login</a> </p>
+                <hr />
+                <p class="auth-paragraph"> <a class="auth-register" href="register.html">Register</a> </p>
+                <!-- <h2 style="color: red; cursor: pointer;" onclick="hideAuth()">Close</h2> -->
             </div>
+        
         </div>
+        <h1 class="heading3" style="font-size: 30px;"> SIMPLE CALCULATOR </h1>
+        <div class="CALCULATOR">
+            <form id="math" method="get" action="math.php"> 
+                <div class="calcfirst">
+                    <input type ="number" name="input1" id="input1" placeholder="input number 1">
+                    <input type ="button3" name="input1" id="ADD" value="ADD">
+                    <input type ="button3" name="input1" id="SUB" value="SUB">
+                    <br><br>
+                </div>  
+                <div class="calcsecond">
+                    <input type="number" name="input2" id="input2" placeholder="input number 2">
+                    <input type ="button3" name="input1" id="MULT" value="MULT">
+                    <input type ="button3" name="input1" id="DIV" value="DIV">
+                    <br>
+                </div>    
+            </form>    
+        
+        <div class="result">
+            <p>Result</p>
+            <input type="result" name="input2" id="result" placeholder=" ">
+                <br>
+        </div>
+        </div>
+        <script src="js/calc.js"></script>
+        
     </body>

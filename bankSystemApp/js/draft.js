@@ -1,4 +1,11 @@
-//alert(" 1 2 3")
+// const { publicDecrypt } = require("crypto")
+// //alert(" 1 2 3")
+
+// const { truncate } = require("fs")
+
+// const { request } = require("express")
+
+
 
 // var a= prompt("how old are you")
 // console.log(a);
@@ -18,8 +25,8 @@
 // alert(`${c}+${d}+${k}+${e}=${c+d+k+e}`)
 // console.log(c+d+k+e)
 // const names={
-    // firstname:"kev",
-    // lastname:"root",
+//     firstname:"kev",
+//     lastname:"root",
 // }
 // console.log(typeof names)
 
@@ -33,18 +40,18 @@
 // }
 // console.log(typeof t)
 
- var n= "firstname"
-var m="lastname is"
-// //console.log(n+m)
+//  var n= "firstname"
+// var m="lastname is"
+// console.log(n+m)
 // n.concat(m)
-// //console.log(n.concat(m))
-// //alert(`${n}+${m}=${n+m}`)
-// //console.log(n+m)
+// console.log(n.concat(m))
+// alert(`${n}+${m}=${n+m}`)
+// console.log(n+m)
 // //alert(`${n.concat(m)}`)
 // n.toString(m)
 // console.log(typeof n.toString(m))
 // console.log(`${n}${m}`)
- console.log(m.split(' ') )
+//  console.log(m.split(' ') )
 // const u=m.split('-') .reverse() .join("")
 // console.log(u.split('') .reverse() .join(""))
 // console.log(n.slice(0,5))
@@ -63,7 +70,7 @@ var m="lastname is"
 // console.log(numbers.indexOf(9))
 // console.log(numbers.lastIndexOf(9))
 // console.log(numbers.filter((value,index)=>{
-    // return value%2!== 0
+//     return value%2!== 0
 
 // }))
 
@@ -91,14 +98,28 @@ var m="lastname is"
 //         age:30
 //     },
 //     {
-// //         name:"kaliza",
-// //         age:45
-// //     },
-// //     {
-// //         name:"muhizi",
-// //         age:40
-// //     }
-// // ]
+//         name:"kalisa",
+//         age:45
+//     },
+//     {
+//         name:"muhizi",
+//         age:40
+//     }
+// ]
+// console.log(users.find((value,index)=>{
+//     return value.name==="kalisa"
+// }))
+// console.log(users.filter((value,index)=>{
+//     return value.name==="kalisa" && value.age<30
+// }))
+// var w="have a nice day"
+// localStorage.setItem("key",w)
+// const g=localStorage.getItem("key")
+// console.log(g)
+
+
+
+
 // // console.log(users.filter((value,index)=>{
 // //     return value.age<30
 // // }))
@@ -177,23 +198,23 @@ var m="lastname is"
 
 
 // function countletter(data){
-// //     let tempArr=str.split('')
-// //     let letter=[];
-// //     let count=1;
+// // //     let tempArr=str.split('')
+// // //     let letter=[];
+// // //     let count=1;
     
-// //     for(let i=0; i<tempArr.length;i++)
-// //     if(tempArr[i]=== tempArr[i+1]){
-// //         count++;
-// //     }
-// //     else{
-// //         let value =`${tempArr},${count}`;
-// //         letter= [...value,letter];
-// //         count=1
-// //     }
+// // //     for(let i=0; i<tempArr.length;i++)
+// // //     if(tempArr[i]=== tempArr[i+1]){
+// // //         count++;
+// // //     }
+// // //     else{
+// // //         let value =`${tempArr},${count}`;
+// // //         letter= [...value,letter];
+// // //         count=1
+// // //     }
 
-// // return count;
-//     const i="index";
-//     const o="value";
+// // // return count;
+// //     const i="index";
+// //     const o="value";
 //     const info={}
 //     for (let index = 0; index < data.length; index++) {
 //        if(info[data[index]]){ 
@@ -321,53 +342,275 @@ var m="lastname is"
 // }
 // console.log(uoijoi(data))
 
-function math (a,b,act){
-    if(act ==="+"){
-        return(a+b)
-    }
-    else if(act==="-"){
-        return(a-b)
-    }
-    else if(act==="*"){
-        return(a*b)
-    }
-    else if(act==="/"){
-        return (a/b)
-    }
+// function math (a,b,act){
+//     if(act ==="+"){
+//         return(a+b)
+//     }
+//     else if(act==="-"){
+//         return(a-b)
+//     }
+//     else if(act==="*"){
+//         return(a*b)
+//     }
+//     else if(act==="/"){
+//         return (a/b)
+//     }
     
+// }
+// const input1=prompt("input first number")
+// const input2=prompt("input second number")
+// console.log(`${input1}+${input2}=`,math( parseInt(input1),parseInt(input2),"+"))
+// console.log(`${input1}-${input2}=`,math(parseInt(input1),parseInt(input2),"-"))
+// console.log(`${input1}*${input2}=`,math(parseInt(input1),parseInt(input2),"*"))
+// console.log(`${input1}/${input2}=`,math(parseInt(input1),parseInt(input2),"/"))
+
+// const str ="there is no way" 
+
+// function countLetter(str){
+//     const info={}
+//     for (let index = 0; index < str.length; index++) {
+//        if (info[str[index]]) {
+//            info[str[index]]+=1
+//        }
+//        else{
+//            info[str[index]]=1
+//        }
+        
+//     }
+//     const ans= Object.value(info).sort((a,b)=>a-b);
+//     const value= ans[0]
+//     console.leg(value[0])
+    
+// }
+// const a=[1,2,3,4,5,6,7,8,9,9]
+// console.log(a.reduce((a,b)=>{
+//     return (a+b)
+
+// },0))
+
+// const b=[1,2,3]
+// const c=b.map((a,b)=>{
+//     return(a*3)
+// })
+// console.log(c)
+// b.forEach((value,index) => {
+//     b[index]=value*3
+// });
+
+// console.log(b)
+// let i=0
+// let sum=0
+// while (i<b.length) {
+//     sum=sum+b[i]
+//     i=i+1
+// }
+// console.log(sum)
+
+// const triangle = [3,4,5]
+
+// function area([length,height]){
+//     return (length*height)/2
+// }
+
+// console.log(area(triangle))
+
+
+// const arr =[1,2,3,1,3,4,5,1,10,8,9,5]
+// const a= arr.filter((c,b,d) =>{
+//     return d.indexOf(c)===b
+// })
+// console.log(a.sort((a,b)=>b-a))
+// const info = [...new Set(arr)].sort((a,b)=>a-b)
+// console.log(info)
+
+// const q=arr.sort((a,b)=>a-b)
+// console.log(q)
+// const c=q[0],k= q[arr.length-1]    //accessing first element in the array, and the last one
+// console.log(c,k)
+
+
+/**
+ * write a function that will check if the number is a palindrome number or not
+ * a palindrome number is a number, word that should re-written the same backward as the forward
+ * for example: 121 // this is a palindrome therefore the function should return true
+ *              122 // this is not a palindrome, so function should return false
+ * 
+ */
+//  function isPalindrome(num) {
+    //  const data={}
+    //  for (let index = 0; index <num.length; index++) {
+    //     if([num[index]]){ 
+    //     num=== num.split("").reverse().join("")
+    //     return("isPalindrome")
+    //     }
+    //     else{
+    //         num!==num.split("").reverse().join("")
+    //     return ("isnotPalindrome")
+    //     }
+            
+
+    // }
+    // const number = num.toString().split("").reverse().join("")
+    // parseInt(number)===num?true:false
+//     if(parseInt(number)===num){
+//         return true
+//     }else{
+//         return false
+//     }
+                    
+//  }
+
+ 
+// function nextPalindrome(numbr){
+    // const nextNumber={}
+    // const v=numbr.toString().split("").join("")
+    // for (let index = 0; index < v.length; index++) {
+    //     nextNumber[v[index]]=
+
+        
+    // if (parseInt(v)===numbr) {
+    //     return 
+        
+    // }
+
+    // var nextNumber=numbr+1
+    // while (!isPalindrome(nextNumber)) {
+    //     nextNumber+=1
+    // }
+
+//     for (let index = 0; !isPalindrome(nextNumber); index++) {
+//         nextNumber+=1
+//     }
+
+//     return nextNumber
+
+// }
+//  console.log(isPalindrome(121)) // should return true
+//  console.log(nextPalindrome(121)) //shoul return 131
+//  console.log(isPalindrome(1444)) // should return false
+//  console.log(nextPalindrome(1444)) //shoul return 
+ 
+
+// const express=require("express")
+// const dotenv=require("dotenv")
+
+// dotenv= config()
+// const app= express()
+
+// console.log(process.env)
+// app.use("/",(request,response)=>{
+//     const data={
+//         password:request.body.password,
+//         email:request.body.email
+//     }
+//     response.json({message:"hello world"})
+// })
+// const Port=process.env.Port || 3000
+// app.listen(Port,function(){console.log(`hi there${Port}`)}) 
+
+
+// array.push= insert data into an array at the last index
+// array.pop= remove the last data in the array
+// array.shift= remove the first data in the array
+// array.unshift=insert data into an array at the first index
+
+
+// get= get info from the servel
+// post= creat n save info to your server
+// put = update info from server
+// delete = delete info from the server
+// patch= update a porshion on the server
+
+
+// const express = require("express");
+// const dotenv = require("dotenv");
+// const bcryt = require("bcryptjs");
+
+// dotenv.config();
+
+// const app = express();
+// app.use(express.urlencoded({ extended: false }));
+// // app.use(express.json())
+// const creat = [];
+// // console.log(process.env)
+// app.get("/", (request, response) => {
+//   response.send({ message: "welcome to our api together" });
+// });
+
+// app.post("/creat-account", (request, response) => {
+//       const data = {
+//         id: creat.length+1,
+//         firstname: request.body.firstname,
+//         lastname: request.body.lastname,
+//         address: request.body.address,
+//         nationality: request.body.nationality,
+//         phoneNumber: request.body.phoneNumber,
+//         IdNumber: request.body.IdNumber,
+//         email: request.body.email,
+//         status:request.body.status,
+//         fundsAvailable: request.body.funds-available,
+//         createdOn:request.body.createdOn
+
+        
+//       };
+
+//       const matchedData = creat.find((value, index) => {
+//         return value.lastname === data.lastname && value.firstname === data.firstname && value.phoneNumber === value.phoneNumber
+//         && value.IdNumber === value.IdNumber;
+//       });
+
+//       if (matchedData) {
+//         return response.send({ message: "account already created" });
+//       }
+    
+//       users.get(data);
+
+
+//   response.json({ message: "you have successfuly created an account" });
+// });
+
+// status
+// available fund
+// created on 
+// account Number
+// id Number
+// function isPalindrum(word) {
+//   const t= word.split("").reverse().join("")
+//   return t.toString()===word.toString()?true:false
+  
+// }
+// console.log(isPalindrum("madamj"))
+
+// const number=[1,2,3,4,5,6,7,8]
+// function oddsNumber(arr){
+//   return arr.filter((value,index)=>{
+//     return value%2===1
+//   })
+// }
+
+// console.log(oddsNumber(number))
+
+
+function countCharacter(word){
+  const info={}
+  for (let index = 0; index < word.length; index++) { 
+  if(info[word[index]]){
+    info[word[index]]+=1
+  }else{
+    info[word[index]]=1
+  }
 }
-const input1=prompt("input first number")
-const input2=prompt("input second number")
-console.log(`${input1}+${input2}=`,math( parseInt(input1),parseInt(input2),"+"))
-console.log(`${input1}-${input2}=`,math(parseInt(input1),parseInt(input2),"-"))
-console.log(`${input1}*${input2}=`,math(parseInt(input1),parseInt(input2),"*"))
-console.log(`${input1}/${input2}=`,math(parseInt(input1),parseInt(input2),"/"))
+return info
+  
+}
+const w="this is kigali"
+console.log(countCharacter(w))
 
+// const arr =[1,2,3]
+// console.log(amazina);
+// console.log(amazina['firstname']) // muhabura
+// amazina['places']="gisozi"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(amazina)
+// console.log(arr[0]); //1
+httrack
