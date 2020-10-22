@@ -414,6 +414,27 @@
 
 // console.log(area(triangle))
 
+ 
+// function nextPalindrome(numbr){
+    // const nextNumber={}
+    // const v=numbr.toString().split("").join("")
+    // for (let index = 0; index < v.length; index++) {
+    //     nextNumber[v[index]]=
+
+        
+    // if (parseInt(v)===numbr) {
+    //     return 
+        
+    // }
+
+    // var nextNumber=numbr+1
+    // while (!isPalindrome(nextNumber)) {
+    //     nextNumber+=1
+    // }
+
+//     for (let index = 0; !isPalindrome(nextNumber); index++) {
+//         nextNumber+=1
+//     }
 
 // const arr =[1,2,3,1,3,4,5,1,10,8,9,5]
 // const a= arr.filter((c,b,d) =>{
@@ -565,6 +586,17 @@
     
 //       users.get(data);
 
+// status
+// available fund
+// created on 
+// account Number
+// id Number
+// function isPalindrum(word) {
+//   const t= word.split("").reverse().join("")
+//   return t.toString()===word.toString()?true:false
+  
+// }
+// console.log(isPalindrum("madamj"))
 
 //   response.json({ message: "you have successfuly created an account" });
 // });
@@ -590,6 +622,10 @@
 
 // console.log(oddsNumber(number))
 
+// const arr =[1,2,3]
+// console.log(amazina);
+// console.log(amazina['firstname']) // muhabura
+// amazina['places']="gisozi"
 
 function countCharacter(word){
   const info={}
@@ -610,9 +646,4 @@ console.log(countCharacter(w))
 // console.log(amazina);
 // console.log(amazina['firstname']) // muhabura
 // amazina['places']="
-gisozi"
 
-// console.log(amazina)
-// console.log(arr[0]); //1
-httrack
-delete : ()
